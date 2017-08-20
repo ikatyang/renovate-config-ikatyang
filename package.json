@@ -1,0 +1,47 @@
+{
+  "name": "renovate-config-ikatyang",
+  "version": "1.0.0",
+  "description": "renovate config for ikatyang",
+  "keywords": ["renovate", "renovate-config"],
+  "repository": "https://github.com/ikatyang/renovate-config-ikatyang",
+  "homepage": "https://github.com/ikatyang/renovate-config-ikatyang#readme",
+  "author": {
+    "name": "Ika",
+    "email": "ikatyang@gmail.com",
+    "url": "https://github.com/ikatyang"
+  },
+  "license": "MIT",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "standard-version": "4.2.0"
+  },
+  "files": [],
+  "renovate-config": {
+    "default": {
+      "extends": [
+        ":renovatePrefix",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":automergeRequireAllStatusChecks",
+        ":maintainLockFilesWeekly"
+      ],
+      "timezone": "Asia/Taipei",
+      "schedule": ["after 12am and before 8am"],
+      "semanticCommits": true,
+      "separateMajorReleases": true,
+      "separatePatchReleases": false,
+      "ignoreUnstable": true,
+      "respectLatest": true,
+      "rebaseStalePrs": true,
+      "prCreation": "immediate",
+      "automerge": "minor",
+      "automergeType": "pr",
+      "unpublishSafe": false,
+      "labels": ["dependencies"]
+    },
+    "library": {
+      "extends": ["ikatyang:default", ":pinOnlyDevDependencies"]
+    }
+  }
+}
