@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/ikatyang/renovate-config-ikatyang/compare/v1.2.0...v1.2.1) (2017-08-21)
+
+
+### Bug Fixes
+
+* **lockFileMaintenance:** schedule should be `on Monday` instead of `on Mondays` ([5ae4ffa](https://github.com/ikatyang/renovate-config-ikatyang/commit/5ae4ffa))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/ikatyang/renovate-config-ikatyang/compare/v1.1.0...v1.2.0) (2017-08-21)
 
