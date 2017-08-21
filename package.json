@@ -27,7 +27,7 @@
         ":maintainLockFilesDisabled"
       ],
       "timezone": "Asia/Taipei",
-      "schedule": ["after 12am and before 8am"],
+      "schedule": ["before 8am"],
       "semanticCommits": true,
       "separateMajorReleases": true,
       "separatePatchReleases": false,
