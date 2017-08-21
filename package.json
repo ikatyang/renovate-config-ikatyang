@@ -24,7 +24,7 @@
         ":renovatePrefix",
         ":semanticPrefixFixDepsChoreOthers",
         ":automergeRequireAllStatusChecks",
-        ":maintainLockFilesWeekly"
+        ":maintainLockFilesDisabled"
       ],
       "timezone": "Asia/Taipei",
       "schedule": ["after 12am and before 8am"],
