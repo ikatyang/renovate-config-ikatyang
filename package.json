@@ -1,8 +1,11 @@
 {
   "name": "renovate-config-ikatyang",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "renovate config for ikatyang",
-  "keywords": ["renovate", "renovate-config"],
+  "keywords": [
+    "renovate",
+    "renovate-config"
+  ],
   "repository": "https://github.com/ikatyang/renovate-config-ikatyang",
   "homepage": "https://github.com/ikatyang/renovate-config-ikatyang#readme",
   "author": {
@@ -27,7 +30,9 @@
         ":maintainLockFilesDisabled"
       ],
       "timezone": "Asia/Taipei",
-      "schedule": ["before 8am"],
+      "schedule": [
+        "before 8am"
+      ],
       "semanticCommits": true,
       "separateMajorReleases": true,
       "separatePatchReleases": false,
@@ -38,10 +43,15 @@
       "automerge": "minor",
       "automergeType": "pr",
       "unpublishSafe": false,
-      "labels": ["dependencies"]
+      "labels": [
+        "dependencies"
+      ]
     },
     "library": {
-      "extends": ["ikatyang:default", ":pinOnlyDevDependencies"]
+      "extends": [
+        "ikatyang:default",
+        ":pinOnlyDevDependencies"
+      ]
     }
   }
 }
