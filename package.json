@@ -26,13 +26,17 @@
       "extends": [
         ":renovatePrefix",
         ":semanticPrefixFixDepsChoreOthers",
-        ":automergeRequireAllStatusChecks",
-        ":maintainLockFilesDisabled"
+        ":automergeRequireAllStatusChecks"
       ],
       "timezone": "Asia/Taipei",
       "schedule": [
         "before 8am"
       ],
+      "lockFileMaintenance": {
+        "enabled": true,
+        "automerge": true,
+        "schedule": "before 8am on Mondays"
+      },
       "semanticCommits": true,
       "separateMajorReleases": true,
       "separatePatchReleases": false,
